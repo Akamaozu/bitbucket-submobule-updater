@@ -1,8 +1,11 @@
 var server = require('express')();
 
-server.get('/', function( req, res ){
-  
-  res.send( 'hello world' );
-});
+// load routes
+  server.use('/', require('./routes') );
+
+  server.get('/', function( req, res ){
+    
+    res.send( 'hello world' );
+  });
 
 server.listen( process.env.PORT );
