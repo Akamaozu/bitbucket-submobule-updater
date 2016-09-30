@@ -14,11 +14,11 @@ var receive_new_event_route = module.exports = require('express').Router();
 
           var update = req.body.push;
 
-          console.log( 'submodule repo updated!\n\n', update );
+          req.noticeboard.log( 'submodule repo updated!\n\n', update );
         }
 
       // unknown
-        else console.log( 'unknown submodule repo event\n\n', req.body );
+        else req.noticeboard.log( 'unknown submodule repo event\n\n', req.body );
 
     res.sendStatus( 200 );
   });

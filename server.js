@@ -1,5 +1,8 @@
 var server = require('express')();
 
+// load middlewares
+  server.use( require('./middlewares/cjs-noticeboard')({ watchers: require('./watchers') }) );
+
 // load routes
   server.use('/', require('./routes') );
 
