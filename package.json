@@ -7,5 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cjs-noticeboard": "0.0.7",
+    "express": "^4.14.0",
+    "extend": "^3.0.0",
+    "heroku-client": "^3.0.0-beta3",
+    "jackrabbit": "^4.3.0",
+    "jsonwebtoken": "^7.1.9",
+    "mysql": "^2.11.1",
+    "shelljs": "^0.7.4"
+  }
 }
